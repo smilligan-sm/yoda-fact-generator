@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Random Fact Generator</h1>
+      </header>
+      <main>
+        <div class="form-wrapper">
+          <form class="topic-form" id="form-generator">
+            <input
+              type="text"
+              placeholder="Enter a topic you'd like to know a fact about"
+              class="topic-selector"
+              id="user-instructions"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" - class="topic-submit" />
+          </form>
+          <div class="hint">i.e. Hotdogs, Mustard, The Australian Emu war</div>
+        </div>
+        <div class="results hidden" id="results"></div>
+      </main>
+    </div>
+    <footer>
+      Built by
+      <a href="https://github.com/smilligan-sm" target="_blank"
+        >Sarah Milligan</a
+      >, is open-sourced on
+      <a href="https://github.com/smilligan-sm/ai-generator" target="_blank"
+        >Github</a
+      >
+      and hosted on
+      <a href="https://smilligan-ai-generator.netlify.app/" target="_blank"
+        >Netlify</a
+      >
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
