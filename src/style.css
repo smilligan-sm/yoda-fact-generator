@@ -1,12 +1,22 @@
 body {
   font-family: "Lexend", serif;
-  background-color: rgba(99, 99, 102, 0.2);
+  width: 100%;
+  min-height: 100vh; /* Allow full height */
+  
+  background-image: 
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/206/original/yoda-leftside.jpg?1748910011"),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/207/original/yoda-rightside.jpg?1748910019"),
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    
+  background-position: left center, right center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 30%, 30%, cover;
 }
 
 .container {
   width: 600px;
   margin: 30px auto;
-  background: white;
+  background: #A6DD97;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -14,15 +24,30 @@ body {
 header {
   margin-bottom: 30px;
 }
+img {
+  width: 80px;
+  display: block;
+  margin: auto;
+}
 h1 {
   text-align: center;
   font-family: "Lexend", serif;
-  font-size: 45px;
-  color: rgb(192, 79, 183);
+  font-size: 38px;
+  color: rgb(0, 0, 0);
   line-height: 1.5;
+  margin-top: 10px;
+}
+h4 {
+  text-align: center;
+  font-family: "Lexend", serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  margin-top: 10px;
+  opacity: 0.7;
 }
 .form-wrapper {
-  background-color: rgb(240, 238, 247);
+  background-color: #39612e;
   margin-bottom: 20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   padding: 30px;
@@ -44,7 +69,7 @@ h1 {
 
 .topic-submit {
   font-family: "Lexend", serif;
-  background-color: rgb(165, 111, 190);
+  background-color: rgb(22, 22, 22);
   padding: 5px 10px;
   border: none;
   border-radius: 20px;
@@ -54,12 +79,20 @@ h1 {
   font-weight: 500;
   width: 20%;
 }
+
+.topic-submit:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
 .hint {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.5;
   margin-top: 5px;
-  padding-left: 85px;
-  opacity: 0.6;
+  padding-left: 45px;
+  opacity: 0.7;
+  color: white;
+  font-style: italic;
 }
 .results {
   display: inline-block;
@@ -93,11 +126,11 @@ footer {
   padding: 5px 0 0 0;
   text-align: center;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 footer a {
-  color: rgb(165, 111, 190);
+  color: rgb(60, 214, 13);
   text-decoration: none;
   font-weight: bold;
 }
